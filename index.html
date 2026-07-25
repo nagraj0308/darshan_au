@@ -1,89 +1,255 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <style>
-         .img {
-         max-width: 100%;
-         border-radius: 50%;
-         margin-bottom: 20px;
-         width: 150px;
-         height: 150px;
-         margin: 5px 5px;
-         padding: 2px;
-         background: #123456;
-         }
-         p {
-         margin: 5px auto;
-         padding: 10px;
-         font-size: 1em;
-         /* font-family: ; */
-         }
-         h2 {
-         margin: 5px auto;
-         padding: 20px;
-         font-size: 15px;
-         font-weight: 400;
-         }
-      </style>
-   </head>
-   <body>
-      <p><strong>About Us - Darshan</strong></p>
-      <p>
-         Welcome to Darshan, your daily source of inspiration and positivity! Our
-         app is dedicated to providing you with uplifting quotes from ancient
-         scriptures and revered wisdom literature. At Darshan, we believe in the
-         transformative power of timeless wisdom to enrich modern lives.
-      </p>
-      <p><strong>Our Mission</strong></p>
-      <p>
-         Our mission is simple yet profound: to help you feel positive and stay
-         positive in every situation life presents. We understand that life can be
-         challenging, and sometimes all it takes is a few words of wisdom to change
-         your perspective and uplift your spirits. Through daily quotes from
-         ancient scriptures and revered wisdom literature, we aim to infuse your
-         day with positivity, hope, and spiritual guidance.
-      </p>
-      <p><strong>What We Offer</strong></p>
-      <ul>
-         <li>
-            Daily Quotes: Get daily handpicked quotes from timeless ancient
-            scriptures and revered wisdom texts delivered straight to your device.
-         </li>
-         <li>
-            Spiritual Insights: Gain deeper understanding and insights into the
-            teachings of these timeless texts.
-         </li>
-         <li>
-            Positive Vibes: Let the wisdom of ancient sages inspire you to navigate
-            life's challenges with grace and positivity.
-         </li>
-         <li>
-            Personal Growth: Use these powerful messages to foster personal growth
-            and spiritual development.
-         </li>
-      </ul>
-      <p><strong>Why Choose Darshan?</strong></p>
-      <ul>
-         <li>
-            Authentic Sources: Our quotes are carefully selected from authentic
-            Hindu scriptures to ensure you receive genuine spiritual guidance.
-         </li>
-         <li>
-            User-Friendly Interface: Our app is designed to be easy to use, allowing
-            you to quickly access your daily dose of inspiration.
-         </li>
-         <li>
-            Community of Like-Minded Individuals: Join a community of users who
-            share a common goal of seeking positivity and spiritual growth.
-         </li>
-      </ul>
-      <br />
-      <p><strong>Contact</strong></p>
-      <p>kaamkeapps@gmail.com</p>
-      <!-- <p><strong>Contact</strong></p>
-         <img src="sonu.jpg" class="img"></img>
-         <p><a href="https://www.facebook.com/profile.php?id=100014439037929"  style="text-decoration:none" >Akash Chaudhary</a> <br>9721940003</p>
-         <img src="nagraj.jpg" class="img"></img>
-         <p><a href="https://www.facebook.com/nagendra0308/"  style="text-decoration:none" >Nagendra Chaudhary</a> <br>7060196036 <br>nagendrachaudhary2016@gmail.com</p> -->
-   </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Darshan</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#F7F9FF;
+            color:#0F1D5A;
+            line-height:1.8;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        .header{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .logo{
+            width:100px;
+            height:100px;
+            margin:0 auto 20px;
+            border-radius:28px;
+            background:linear-gradient(135deg,#6C4DFF,#2563FF);
+            color:#fff;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:44px;
+            font-weight:bold;
+            box-shadow:0 8px 25px rgba(37,99,255,.20);
+        }
+
+        h1{
+            font-size:42px;
+            margin-bottom:10px;
+            color:#0F1D5A;
+        }
+
+        .tagline{
+            color:#5A678A;
+            font-size:18px;
+        }
+
+        .card{
+            background:#FFFFFF;
+            padding:30px;
+            border-radius:20px;
+            margin-bottom:24px;
+            box-shadow:0 5px 18px rgba(37,99,255,.08);
+        }
+
+        h2{
+            color:#2563FF;
+            margin-bottom:18px;
+            font-size:26px;
+        }
+
+        p{
+            margin-bottom:16px;
+            color:#44506A;
+        }
+
+        ul{
+            padding-left:22px;
+        }
+
+        li{
+            margin-bottom:12px;
+            color:#44506A;
+        }
+
+        strong{
+            color:#2563FF;
+        }
+
+        a{
+            color:#2563FF;
+            text-decoration:none;
+            font-weight:600;
+        }
+
+        .contact-box{
+            background:#F4F7FF;
+            border-left:5px solid #2563FF;
+            padding:18px;
+            border-radius:12px;
+            margin-top:15px;
+        }
+
+        .footer{
+            margin-top:50px;
+            text-align:center;
+            color:#6B7280;
+            font-size:14px;
+            padding-bottom:30px;
+        }
+
+        @media(max-width:600px){
+
+            .container{
+                padding:25px 15px;
+            }
+
+            h1{
+                font-size:34px;
+            }
+
+            h2{
+                font-size:22px;
+            }
+
+            .card{
+                padding:22px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div class="logo">D</div>
+
+        <h1>Darshan</h1>
+
+        <div class="tagline">
+            All your favorite websites in one place
+        </div>
+    </div>
+
+
+    <div class="card">
+
+        <h2>About Darshan</h2>
+
+        <p>
+            <strong>Darshan</strong> is a simple, fast, and beautifully designed application that helps you save, organize, and instantly access your favorite websites from one convenient place.
+        </p>
+
+        <p>
+            Whether you frequently visit shopping sites, educational portals, social media platforms, news websites, developer tools, or work resources, Darshan keeps everything organized and easily accessible.
+        </p>
+
+        <p>
+            Instead of searching through browser bookmarks or remembering long website addresses, simply open Darshan and access all your important websites with a single tap.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Our Mission</h2>
+
+        <p>
+            Our mission is to make web browsing simpler, faster, and more organized by providing an elegant platform where users can keep all their important website links together.
+        </p>
+
+        <p>
+            We believe productivity begins with quick access to the tools and websites you use every day.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Features</h2>
+
+        <ul>
+            <li>Save unlimited website links.</li>
+            <li>Create custom categories.</li>
+            <li>Quickly search your saved websites.</li>
+            <li>One-tap access to your favourite sites.</li>
+            <li>Organize work, shopping, education, news, and personal websites.</li>
+            <li>Simple, clean and easy-to-use interface.</li>
+            <li>Lightweight and fast performance.</li>
+        </ul>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Why Choose Darshan?</h2>
+
+        <p>
+            Darshan is designed for users who want a clean and efficient way to manage their favourite websites. With an intuitive interface and smart organization, you spend less time searching and more time getting things done.
+        </p>
+
+        <p>
+            Whether you're a student, professional, developer, or casual internet user, Darshan helps keep your online world organised.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            We value your feedback and are always looking to improve Darshan. If you have any questions, suggestions, bug reports, or feature requests, we'd love to hear from you.
+        </p>
+
+        <div class="contact-box">
+
+            <strong>Email</strong><br><br>
+
+            <a href="mailto:kaamkeapps@gmail.com">
+                kaamkeapps@gmail.com
+            </a>
+
+        </div>
+
+        <p style="margin-top:20px;">
+            We aim to respond to all enquiries as quickly as possible.
+        </p>
+
+    </div>
+
+
+    <div class="footer">
+
+        © 2026 <strong>Darshan</strong>. All rights reserved.<br><br>
+
+        Contact:
+        <a href="mailto:kaamkeapps@gmail.com">
+            kaamkeapps@gmail.com
+        </a>
+
+    </div>
+
+</div>
+
+</body>
 </html>
